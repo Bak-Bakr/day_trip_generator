@@ -16,7 +16,6 @@ def user_destination_confirmation():
     elif user_input == "n":
         return user_destination_confirmation()
 
-confirmed_destination = user_destination_confirmation ()
 
 transportation_list = ["Rental car", "Train", "Bike", "Walking" , "Scooter"]
 
@@ -33,7 +32,6 @@ def user_transportation_confirmation():
     elif user_input == "n":
         return user_transportation_confirmation()
 
-confirmed_transportation = user_transportation_confirmation ()
 
 
 restaurant_list = ["Bak Steakhouse", "Pizzeria", "Steak 48", "Cuba Libre"]
@@ -51,7 +49,6 @@ def user_restaurant_confirmation():
     elif user_input == "n":
         return user_restaurant_confirmation()
 
-confirmed_restaurant = user_restaurant_confirmation()
 
 entertainment_list = ["A concert", "The recording studio", "A museum", "Taking a nap"]
 def random_item_picker(list):
@@ -67,21 +64,20 @@ def user_entertainment_confirmation():
     elif user_input == "n":
         return user_entertainment_confirmation()
         
-confirmed_entertainment = user_entertainment_confirmation ()
 
 def random_item_picker(list):
     random_item = random.choice(list)
     return random_item
 
-def user_daytrip_confirmation():
+# def user_daytrip_confirmation():
 
-    user_input = input(f'Would you like to confirm this Day Trip? y/n')
-    if user_input == "y":
-        print(f'You have chosen to travel to {confirmed_destination} to get around by {confirmed_transportation} to dine at {confirmed_restaurant} and to enjoy spending time at {confirmed_entertainment}. ')
-        return user_daytrip_confirmation
-    elif user_input == "n":
-        print("Let's start over! ")
-    return user_destination_confirmation ()
+#     user_input = input(f'Would you like to confirm this Day Trip? y/n')
+#     if user_input == "y":
+#         print(f'You have chosen to travel to {confirmed_destination} to get around by {confirmed_transportation} to dine at {confirmed_restaurant} and to enjoy spending time at {confirmed_entertainment}. ')
+#         return user_daytrip_confirmation
+#     elif user_input == "n":
+#         print("Let's start over! ")
+#     return user_destination_confirmation ()
     
 def run_program():
     confirmed_destination = user_destination_confirmation ()
@@ -100,7 +96,7 @@ def run_program():
 run_program()
 
 
-confirmed_daytrip = user_daytrip_confirmation ()
+
 # print (confirmed_daytrip)
 
 
