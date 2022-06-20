@@ -69,15 +69,6 @@ def random_item_picker(list):
     random_item = random.choice(list)
     return random_item
 
-# def user_daytrip_confirmation():
-
-#     user_input = input(f'Would you like to confirm this Day Trip? y/n')
-#     if user_input == "y":
-#         print(f'You have chosen to travel to {confirmed_destination} to get around by {confirmed_transportation} to dine at {confirmed_restaurant} and to enjoy spending time at {confirmed_entertainment}. ')
-#         return user_daytrip_confirmation
-#     elif user_input == "n":
-#         print("Let's start over! ")
-#     return user_destination_confirmation ()
     
 def run_program():
     confirmed_destination = user_destination_confirmation ()
@@ -94,6 +85,8 @@ def run_program():
         run_program()
 
 run_program()
+
+# def user_daytrip_confirmation():
 
 
 
